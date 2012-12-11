@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Tincantations</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            $.ajaxSetup({
+                headers: {
+                    'x-experience-api-version': '0.95'
+                },
+                username: 'q8Mwyl4Lp9PgdFCodetq',
+                password: 'uGEvrvspI6veJod2eaii'
+            });
+            console.log('creating send function');
+            var send = function(structure) {
+                console.log('sending!');
+                $.post(
+                    'https://workshop1210.waxlrs.com/TCAPI/statements',
+                    JSON.stringify(structure),
+                    function(data, status) {
+                        console.log(status);
+                        console.log(data);
+                    }
+                );
+            };
+            console.log('registering ready handler');
+            $(document).ready(function() {
+                send({
+    "actor": {
+        "name": "Bob",
+        "account": {
+            "homePage": "http://corporate.dennys.com",
+            "name": "87"
+        }
+    },
+    "verb": {
+        "id": "http://corporate.dennys.com/training/tasks/hamburger#pattyformed",
+        "display": {
+            "en-US": "formed Denny's hamburger patty"
+        }
+    },
+    "object": {
+        "id": "http://corporate.dennys.com/training/tasks/hamburger#patty",
+        "definition": {
+            "type": "http://corporate.dennys.com/training/tasks#artifacts",
+            "name": {
+                "en-US": "Hamburger Patty"
+            },
+            "description": {
+                "en-US": "A Hamburger Patty, its life and times as part of the Denny restaurant training experience"
+            }
+        }
+    },
+    "context": {
+        "instructor": {
+            "name": "Jill",
+            "account": {
+                "homePage": "http://corporate.dennys.com",
+                "name": "87"
+            }
+        }
+    },
+    "result": {
+        "success": true,
+        "completion": true,
+        "response": "The hamburger was perfectly made!",
+        "score": {
+            "scaled": 1.0
+        }
+    }
+});
+});
+</script>
+    </head>
+    <body>
+       <h1>Hello!</h1>
+    </body>
+</html>
