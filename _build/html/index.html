@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Hello! &mdash; Tin Can Technical Workshop 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/slide.css" type="text/css" id="slide-base" media="screen,projection" disabled="disabled" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/prettify.css" type="text/css" />
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script> 
+  </head>
+  <body>
+    <button id="startslide">slide mode</button>
+    
+  <div class="section" id="hello">
+<h1>Hello!<a class="headerlink" href="#hello" title="Permalink to this headline">¶</a></h1>
+<p>I&#8217;m Russell, and we&#8217;re Saltbox.</p>
+<div class="section" id="statements">
+<h2>Statements<a class="headerlink" href="#statements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Person</li>
+<li>Verbed</li>
+<li>Object</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>Statements<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Person</li>
+<li>Verbed</li>
+<li>Object</li>
+<li>at a Time</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>Statements<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Person</li>
+<li>Verbed</li>
+<li>Object</li>
+<li>at a Time</li>
+<li>with a Result</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>Statements<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Person</li>
+<li>Verbed</li>
+<li>Object</li>
+<li>at a Time</li>
+<li>with a Result</li>
+<li>in a Context</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>Statements<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Person</li>
+<li>Verbed</li>
+<li>Object</li>
+<li>at a Time</li>
+<li>with a Result<ul>
+<li>oh, and a Score</li>
+</ul>
+</li>
+<li>in a Context</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>Statements<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>in a Context<ul>
+<li>with a parent Activity</li>
+<li>instructed by someone</li>
+<li>as part of a team</li>
+<li>and so on...</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="okay-time-to-break-that-down">
+<h2>Okay, time to break that down<a class="headerlink" href="#okay-time-to-break-that-down" title="Permalink to this headline">¶</a></h2>
+<p>Sounds a bit complicated, but really pretty simple</p>
+</div>
+<div class="section" id="person-well-agent">
+<h2>Person (well, Agent)<a class="headerlink" href="#person-well-agent" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Mal Reynolds&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;objectType&quot;</span><span class="o">:</span> <span class="s2">&quot;Agent&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mbox&quot;</span><span class="o">:</span> <span class="s2">&quot;mailto:mal@serenity0x58.ship&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="objecttype">
+<h2>. . . objectType?<a class="headerlink" href="#objecttype" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;objectType&quot;</span><span class="o">:</span> <span class="s2">&quot;Agent&quot;</span>
+</pre></div>
+</div>
+<p>or &#8220;Group&#8221;, &#8220;Activity&#8221;, or maybe &#8220;SubStatement&#8221; or &#8220;StatementRef&#8221;</p>
+</div>
+<div class="section" id="isn-t-mbox-just-a-fancy-way-to-say-email">
+<h2>Isn&#8217;t mbox just a fancy way to say email?<a class="headerlink" href="#isn-t-mbox-just-a-fancy-way-to-say-email" title="Permalink to this headline">¶</a></h2>
+<p>Inverse functional identifiers!</p>
+<ul class="simple">
+<li>mbox</li>
+<li>mbox_sha1sum</li>
+<li>account (name, homePage)</li>
+<li>openid</li>
+</ul>
+</div>
+<div class="section" id="verbed">
+<h2>Verbed<a class="headerlink" href="#verbed" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;http://example.com/verbs#flew&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;display&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;en&quot;</span><span class="o">:</span> <span class="s2">&quot;flew&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="pulling-an-id-out-of-a-hat">
+<h2>Pulling an ID out of a hat<a class="headerlink" href="#pulling-an-id-out-of-a-hat" title="Permalink to this headline">¶</a></h2>
+<p>Figure out what you mean, then figure out if anyone has meant it before.</p>
+<p>Err on the side of specificity.</p>
+</div>
+<div class="section" id="display">
+<h2>Display<a class="headerlink" href="#display" title="Permalink to this headline">¶</a></h2>
+<p>Language map!</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;en&quot;</span><span class="o">:</span> <span class="s2">&quot;flew&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;es&quot;</span><span class="o">:</span> <span class="s2">&quot;voló&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;gu-IN&quot;</span><span class="o">:</span> <span class="s2">&quot;ઝટપટ જવું&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="object">
+<h2>Object<a class="headerlink" href="#object" title="Permalink to this headline">¶</a></h2>
+<p>We usually mean Activity.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s2">&quot;id&quot;</span><span class="o">:</span>
+    <span class="s2">&quot;http://example.com/activities#ArieltoBeaumonde&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;objectType&quot;</span><span class="o">:</span> <span class="s2">&quot;Activity&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;definition&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span><span class="o">:</span>
+      <span class="s2">&quot;http://example.com/activitytypes#spaceroute&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">&quot;en&quot;</span><span class="o">:</span> <span class="s2">&quot;Ariel to Beaumonde&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">&quot;en&quot;</span><span class="o">:</span>
+        <span class="s2">&quot;The route between the planets</span>
+<span class="s2">        Ariel and Beaumonde&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-lot-to-process-but-not-so-bad-as-all-that">
+<h2>A lot to process, but not so bad as all that<a class="headerlink" href="#a-lot-to-process-but-not-so-bad-as-all-that" title="Permalink to this headline">¶</a></h2>
+<p>ID and objectType again &amp; language maps for name and description.</p>
+<ul class="simple">
+<li>ID is reused less often than verbs</li>
+<li>&#8220;type&#8221; is for grouping activities of like categorization</li>
+</ul>
+</div>
+<div class="section" id="and-that-s-the-most-basic-parts-of-a-statement">
+<h2>And that&#8217;s the most basic parts of a statement<a class="headerlink" href="#and-that-s-the-most-basic-parts-of-a-statement" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Person</li>
+<li>Verbed</li>
+<li>Object</li>
+<li>(id! 12345678-1234-5678-1234-567812345678)</li>
+<li>(timestamp! 1999-12-31T12:59:59Z)</li>
+</ul>
+</div>
+<div class="section" id="briefly-the-parts-you-can-mostly-ignore-when-creating-statements">
+<h2>Briefly, the parts you can mostly ignore when creating statements<a class="headerlink" href="#briefly-the-parts-you-can-mostly-ignore-when-creating-statements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>stored</li>
+<li>authority</li>
+<li>voided</li>
+</ul>
+</div>
+<div class="section" id="so-we-know-who-verbed-what">
+<h2>So we know who verbed what<a class="headerlink" href="#so-we-know-who-verbed-what" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>but what happened when they did it?<ul>
+<li>result</li>
+</ul>
+</li>
+<li>and what situation did all that happen in?<ul>
+<li>context</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="result">
+<h2>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s2">&quot;score&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;scaled&quot;</span><span class="o">:</span> <span class="mf">0.95</span><span class="p">,</span>
+    <span class="s2">&quot;raw&quot;</span><span class="o">:</span> <span class="mi">19</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;success&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="s2">&quot;completion&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="s2">&quot;response&quot;</span><span class="o">:</span> <span class="s2">&quot;The text of the answer, perhaps.&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;duration&quot;</span><span class="o">:</span> <span class="s2">&quot;P1H&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="context">
+<h2>Context<a class="headerlink" href="#context" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>registration: UUID</li>
+<li>instructor: Agent</li>
+<li>team: Group</li>
+<li>contextActivities<ul>
+<li>parent</li>
+<li>grouping</li>
+<li>other</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="extensions">
+<h2>Extensions!<a class="headerlink" href="#extensions" title="Permalink to this headline">¶</a></h2>
+<p>URI key to arbitrary values</p>
+<ul class="simple">
+<li>activity definition</li>
+<li>result</li>
+<li>context</li>
+</ul>
+</div>
+<div class="section" id="three-scenarios">
+<h2>Three Scenarios<a class="headerlink" href="#three-scenarios" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Blog Post Comments</li>
+<li>Simple Quiz</li>
+<li>Mobile Task Simulation Game</li>
+</ul>
+</div>
+<div class="section" id="blog-post-comments">
+<h2>Blog Post Comments<a class="headerlink" href="#blog-post-comments" title="Permalink to this headline">¶</a></h2>
+<p>Recorded: Who Commented on What</p>
+</div>
+<div class="section" id="simple-quiz">
+<h2>Simple Quiz<a class="headerlink" href="#simple-quiz" title="Permalink to this headline">¶</a></h2>
+<p>Recorded: Question Answers and Overall Quiz</p>
+</div>
+<div class="section" id="mobile-task-simulation-game">
+<h2>Mobile Task Simulation Game<a class="headerlink" href="#mobile-task-simulation-game" title="Permalink to this headline">¶</a></h2>
+<p>Recorded: ?</p>
+</div>
+<div class="section" id="best-practices">
+<h2>Best Practices<a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h2>
+<p>To the blog!</p>
+</div>
+<div class="section" id="and-state-and-profiles-and-persons-oh-my">
+<h2>And State and Profiles and Persons, oh my!<a class="headerlink" href="#and-state-and-profiles-and-persons-oh-my" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>transient information</li>
+<li>very app-specific information</li>
+<li>possibly the site of future standardization</li>
+<li>also discovering identities</li>
+</ul>
+</div>
+<div class="section" id="common-errors-and-antipatterns">
+<h2>Common Errors and Antipatterns<a class="headerlink" href="#common-errors-and-antipatterns" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>overly generic verbs</li>
+<li>empty strings instead of URIs</li>
+<li>using an activity for agent-agent interaction</li>
+</ul>
+</div>
+<div class="section" id="time-to-send-some-statements">
+<h2>Time to send some statements<a class="headerlink" href="#time-to-send-some-statements" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="time-to-fix-some-statements">
+<h2>Time to fix some statements<a class="headerlink" href="#time-to-fix-some-statements" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="_static/prettify.js"></script>
+<script type="text/javascript" src="_static/slide.js"></script>
+  </body>
+</html>

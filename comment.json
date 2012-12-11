@@ -1,0 +1,42 @@
+{
+    "id": "12345678-1234-5678-1234-567812345678",
+    "actor": {
+        "name": "Juliet Jones",
+        "objectType": "Agent",
+        "account": {
+            "name": "juliet99",
+            "homePage": "http://blogs.example.com/"
+        }
+    },
+    "verb": {
+        "id": "http://example.com/verbs#commented",
+        "display": {
+            "commented"
+        }
+    },
+    "object": {
+        "id": "http://blogs.example.com/posts/77/comments/3",
+        "objectType": "Activity",
+        "definition": {
+            "name": {
+                "en-US": "The first bit of the comm..."
+            }
+        }
+    },
+    "timestamp": "1999-12-31T12:59:59Z",
+    "result": {
+        "response": "The first bit of the comment, plus the rest of the text"
+    },
+    "context": {
+        "contextActivities": {
+            "parent": {
+                "id": "http://blogs.example.com/posts/77",
+                "definition": {
+                    "name": {
+                        "en-US": "Post Title"
+                    }
+                }
+            }
+        }
+    }
+}
